@@ -36,7 +36,7 @@ class HerbDetailsViewController: UIViewController, UIViewControllerTransitioning
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    
+    containerView.alpha = 0
     bgImage.image = UIImage(named: herb.image)
     titleView.text = herb.name
     descriptionView.text = herb.description
